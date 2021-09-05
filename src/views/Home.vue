@@ -367,6 +367,8 @@ export default {
     },
     onClickClear() {
       this.carts = [];
+      this.totalPrice = 0;
+      this.discount = 0;
       this.clearQuantity = true;
       setTimeout(() => {
         this.clearQuantity = false;
